@@ -7,13 +7,16 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 .header-logo {
     display: block;
@@ -34,6 +37,9 @@ body {
     color: #443737;
     text-decoration: none;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a::after {
     content: "";
     width: 100%;
@@ -52,6 +58,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item {
     position: relative;
@@ -83,6 +90,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -90,7 +98,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -98,10 +106,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -109,14 +124,63 @@ body {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
+    margin-top: -8px;
     margin-bottom: 10px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
 }
+
+.banner-box {
+    color: #FFFFFF;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 100px 100px 100px;
+    height: 238px;
+}
+.banner-title {
+    margin: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.banner-title span {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: #F37335;
+    padding: 5px 18px;
+    max-width: 60px;
+    border-radius: 14px;
+    text-align: center;
+}
+.banner-text {
+    margin: 0;
+    max-width: 353px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FAF9F9;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+.banner-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #FBB731;
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+    
